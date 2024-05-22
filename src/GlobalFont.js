@@ -5,7 +5,6 @@ import * as SplashScreen from 'expo-splash-screen';
 function GlobalFont() {
     const [fontsLoaded, fontError] = useFonts({
         'InriaSans': require('@/assets/fonts/InriaSans-Regular.ttf'),
-        'Danfo': require('@/assets/fonts/Danfo-Regular-VariableFont_ELSH.ttf'),
     });
 
     const onLayoutRootView = useCallback(async () => {

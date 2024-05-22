@@ -1,7 +1,10 @@
 import React, { useCallback } from 'react';
 import { Text, StyleSheet } from 'react-native'
+import GlobalFont from '../GlobalFont'
 
 function StyledText({ bold, light, small, big, children }: any) {
+    GlobalFont()
+
     const textStyle = [
         styles.text,
         bold && styles.bold,
