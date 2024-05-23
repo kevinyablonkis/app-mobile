@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
+import theme from '@/src/Theme'
 
 function UIDecoration() {
     return (
@@ -19,7 +20,7 @@ const styles = StyleSheet.create({
         position: 'relative',
         top: 0,
         left: 0,
-        backgroundColor: '#1B5885',
+        backgroundColor: theme.colors.dark,
         alignItems: 'center',
         justifyContent: 'center',
         width: 390,
@@ -29,7 +30,7 @@ const styles = StyleSheet.create({
     },
     containerThree: {
         position: 'absolute',
-        backgroundColor: '#216698',
+        backgroundColor: theme.colors.medium,
         alignItems: 'center',
         justifyContent: 'center',
         width: 320,
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
     },
     containerTwo: {
         position: 'absolute',
-        backgroundColor: '#2978B0',
+        backgroundColor: theme.colors.light,
         alignItems: 'center',
         justifyContent: 'center',
         width: 250,
@@ -49,7 +50,7 @@ const styles = StyleSheet.create({
     },
     containerOne: {
         position: 'absolute',
-        backgroundColor: '#2788CE',
+        backgroundColor: theme.colors.lighter,
         alignItems: 'center',
         justifyContent: 'center',
         width: 190,
