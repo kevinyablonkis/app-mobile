@@ -1,14 +1,16 @@
 import { Text, View, StyleSheet } from "react-native";
 import StyledText from '@/src/components/StyledText'
 import UIDecoration from '@/src/components/UIDecoration'
+import Constant from 'expo-constants'
+import theme from '@/src/Theme'
 
 export default function Index() {
   return (
     <View
       style={styles.container}
     >
-      <View style={{ width: "100%", alignItems: "center", }}>
-        <StyledText big bold>NOMBRE</StyledText>
+      <View style={{ width: "100%", alignItems: "center", zIndex: 1 }}>
+        <StyledText extrabig bold>NOMBRE</StyledText>
         <StyledText light>Haz que el mundo te entienda</StyledText>
       </View>
       <View style={styles.UIDecorationOne}>
@@ -24,7 +26,7 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     position: "relative",
-    backgroundColor: "#164A70",
+    backgroundColor: theme.colors.darker,
     alignItems: "center",
     justifyContent: "center",
     gap: 25,
