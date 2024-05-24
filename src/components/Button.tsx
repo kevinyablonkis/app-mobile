@@ -2,15 +2,22 @@ import React, { Children } from 'react'
 import { Text, StyleSheet } from 'react-native'
 import theme from '@/src/Theme'
 
-function Button({ children }: any) {
+function Button({ primary, secundary, chatSize, children }: any) {
+
+    const Styles = [
+        styles.button,
+        primary && styles.primary,
+        secundary && styles.secundary,
+        chatSize && styles.chatSize
+    ]
+
     return (
-        <Text style={styles.button}>{children}</Text>
+        <Text style={Styles}>{children}</Text>
     )
 }
 
 const styles = StyleSheet.create({
     button: {
-        backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
         width: 180,
@@ -23,6 +30,21 @@ const styles = StyleSheet.create({
         fontSize: theme.fontSize.textSizeButton,
         fontFamily: theme.fonts.global,
     },
+    primary: {
+        backgroundColor: '#fff',
+        fontSize: theme.fontSize.textSizeButton,
+        fontFamily: theme.fonts.global,
+    },
+    secundary: {
+        backgroundColor: theme.colors.medium,
+        color: '#fff',
+        opacity: 0.7,
+        fontSize: theme.fontSize.textSizeButton,
+        fontFamily: theme.fonts.global,
+    },
+    chatSize: {
+        transform: [{ scale: '90%' }]
+    }
 })
 
 export default Button

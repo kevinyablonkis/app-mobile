@@ -13,7 +13,7 @@ export default function Tab() {
           <View style={styles.containerUIDecoration} >
             <UIDecoration />
           </View>
-          <Button>Vincular</Button>
+          <Button primary >Vincular</Button>
         </View>
         <View style={styles.containerListDevice} >
           <StyledText bold big>Buscando dispositivos</StyledText>
