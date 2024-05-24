@@ -1,4 +1,6 @@
-import FontAwesome from '@expo/vector-icons/FontAwesome';
+import { IoChatbubbles } from "react-icons/io5";
+import { IoHome } from "react-icons/io5";
+import { FaWifi } from "react-icons/fa6";
 import { Tabs, usePathname } from 'expo-router';
 import { View, StyleSheet } from 'react-native';
 import StyledText from '@/src/components/StyledText'
@@ -32,7 +34,7 @@ export default function TabLayout() {
                   <View style={styles.tabBarActiveIndicatorOne}></View>
                 )
               }
-              <FontAwesome size={40} name="home" color={color} />
+              <IoHome style={{zIndex: 1}} size={40} color={color} />
             </View>,
         }}
       />
@@ -50,7 +52,7 @@ export default function TabLayout() {
                   <View style={styles.tabBarActiveIndicatorTwo} ></View>
                 )
               }
-              <FontAwesome size={40} name="comment" color={color} />
+              <IoChatbubbles style={{zIndex: 1}} size={40} color={color}/>
             </View>,
         }}
       />
@@ -68,7 +70,7 @@ export default function TabLayout() {
                   <View style={styles.tabBarActiveIndicatorThree}></View>
                 )
               }
-              <FontAwesome size={40} name="wifi" color={color} />
+              <FaWifi style={{zIndex: 1}} size={40} color={color} />
             </View>,
         }}
       />
@@ -89,13 +91,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginLeft: 45,
-    paddingBottom: 6,
+    paddingBottom: 3,
     transform: [{ translateY: -5 }],
   },
   tabBarActiveIndicatorOne: {
     position: 'absolute',
     left: '50%',
-    transform: [{ translateX: '-50%' }, { translateY: '21%' }],
+    transform: [{ translateX: '-50%' }, { translateY: '17%' }],
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: theme.colors.lighter,
@@ -113,13 +115,13 @@ const styles = StyleSheet.create({
   labelContainerTwo: {
     alignItems: 'center',
     justifyContent: 'center',
-    paddingBottom: 6,
+    paddingBottom: 3,
     transform: [{ translateY: -5 }],
   },
   tabBarActiveIndicatorTwo: {
     position: 'absolute',
     left: '50%',
-    transform: [{ translateX: '-50%' }, { translateY: '21%' }],
+    transform: [{ translateX: '-50%' }, { translateY: '17%' }],
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: theme.colors.lighter,
@@ -139,13 +141,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginRight: 45,
-    paddingBottom: 6,
+    paddingBottom: 3,
     transform: [{ translateY: -5 }],
   },
   tabBarActiveIndicatorThree: {
     position: 'absolute',
     left: '50%',
-    transform: [{ translateX: '-50%' }, { translateY: '21%' }],
+    transform: [{ translateX: '-50%' }, { translateY: '17%' }],
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: theme.colors.lighter,
