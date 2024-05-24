@@ -1,23 +1,23 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, StyleSheet, FlatList } from 'react-native'
 import StyledText from '@/src/components/StyledText'
 import ItemDevice from '@/src/components/ItemDevice'
+import devices from '@/src/data'
 
 function SearchDevice() {
     return (
-        <View style={styles.container}>
-            <StyledText bold big>Buscando dispositivos</StyledText>
-            <ItemDevice numberId={1} nameDevice="Redmi 9c" />
-        </View>
+        <FlatList
+            data={devices}
+            ItemSeparatorComponent={
+                () => {
+                    return <View style={{ height: 10 }} />
+                }
+            }
+            renderItem={({ item }) => {
+                return <ItemDevice numberId={item.id} nameDevice={item.name} />
+            }}
+        />
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: 12,
-    },
-})
 
 export default SearchDevice
