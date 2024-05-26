@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import { View, StyleSheet, ScrollView } from 'react-native';
 import SearchDevice from '@/src/components/SearchDevice'
 import StyledText from '@/src/components/StyledText'
 import Button from '@/src/components/Button'
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     alignItems: "center",
     justifyContent: "center",
-    transform: [{ scale: '120%' }],
+    transform: [{ scale: 1.2 }],
   },
   containerListDevice: {
     alignItems: "center",
@@ -52,6 +52,5 @@ const styles = StyleSheet.create({
     gap: 15,
     marginTop: 330,
     marginBottom: 25,
-    // height: 230,
   },
 });

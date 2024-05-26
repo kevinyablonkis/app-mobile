@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
         fontFamily: theme.fonts.global,
     },
     chatSize: {
-        transform: [{ scale: '90%' }]
+        transform: [{ scale: 0.9 }]
     }
 })
 

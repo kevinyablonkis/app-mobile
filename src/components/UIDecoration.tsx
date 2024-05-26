@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         width: 390,
         height: 390,
-        borderRadius: '100%',
+        borderRadius: 1000,
         zIndex: 1,
     },
     containerThree: {
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         width: 320,
         height: 320,
-        borderRadius: '100%',
+        borderRadius: 1000,
         zIndex: 2,
     },
     containerTwo: {
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         width: 250,
         height: 250,
-        borderRadius: '100%',
+        borderRadius: 1000,
         zIndex: 3,
     },
     containerOne: {
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         width: 190,
         height: 190,
-        borderRadius: '100%',
+        borderRadius: 1000,
         zIndex: 4,
     },
 })

@@ -10,7 +10,7 @@
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1B5885"
     },
     "ios": {
       "supportsTablet": true
@@ -18,8 +18,9 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#1B5885"
+      },
+      "package": "com.kevinyablonkis.myapp"
     },
     "web": {
       "bundler": "metro",
@@ -31,12 +32,22 @@
       [
         "expo-font",
         {
-          "fonts": ["./assets/fonts/InriaSans-Regular.ttf","./assets/fonts/Danfo-Regular-VariableFont_ELSH.ttf"]
+          "fonts": [
+            "./assets/fonts/InriaSans-Regular.ttf"
+          ]
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "de73e136-bbd9-44f6-b4cb-b2e23d40edcd"
+      }
     }
   }
 }

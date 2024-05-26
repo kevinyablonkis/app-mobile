@@ -1,6 +1,6 @@
-import { IoChatbubbles } from "react-icons/io5";
-import { IoHome } from "react-icons/io5";
-import { FaWifi } from "react-icons/fa6";
+import Ionicons from '@expo/vector-icons/Ionicons';
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { Tabs, usePathname } from 'expo-router';
 import { View, StyleSheet } from 'react-native';
 import StyledText from '@/src/components/StyledText'
@@ -34,7 +34,7 @@ export default function TabLayout() {
                   <View style={styles.tabBarActiveIndicatorOne}></View>
                 )
               }
-              <IoHome style={{zIndex: 1}} size={40} color={color} />
+              <Ionicons style={{ zIndex: 1 }} name="home" size={37} color={color} />
             </View>,
         }}
       />
@@ -52,7 +52,7 @@ export default function TabLayout() {
                   <View style={styles.tabBarActiveIndicatorTwo} ></View>
                 )
               }
-              <IoChatbubbles style={{zIndex: 1}} size={40} color={color}/>
+              <MaterialCommunityIcons style={{ zIndex: 1 }} name="comment-multiple" size={37} color={color} />
             </View>,
         }}
       />
@@ -70,7 +70,7 @@ export default function TabLayout() {
                   <View style={styles.tabBarActiveIndicatorThree}></View>
                 )
               }
-              <FaWifi style={{zIndex: 1}} size={40} color={color} />
+              <FontAwesome6 style={{ zIndex: 1 }} name="wifi" size={37} color={color} />
             </View>,
         }}
       />

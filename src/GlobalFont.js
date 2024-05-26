@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useEffect } from 'react';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 
@@ -7,9 +7,9 @@ function GlobalFont() {
         'InriaSans': require('@/assets/fonts/InriaSans-Regular.ttf'),
     });
 
-    const onLayoutRootView = useCallback(async () => {
+    useEffect(() => {
         if (fontsLoaded || fontError) {
-            await SplashScreen.hideAsync();
+            SplashScreen.hideAsync();
         }
     }, [fontsLoaded, fontError]);
 
