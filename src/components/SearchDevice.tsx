@@ -1,6 +1,5 @@
 import React from 'react'
-import { View, StyleSheet, FlatList } from 'react-native'
-import StyledText from '@/src/components/StyledText'
+import { View, FlatList, StyleSheet } from 'react-native'
 import ItemDevice from '@/src/components/ItemDevice'
 import devices from '@/src/data'
 
@@ -10,14 +9,20 @@ function SearchDevice() {
             data={devices}
             ItemSeparatorComponent={
                 () => {
-                    return <View style={{ height: 10 }} />
+                    return <View style={{ height: 4 }} />
                 }
             }
             renderItem={({ item }) => {
-                return <ItemDevice numberId={item.id} nameDevice={item.name} />
+                return <ItemDevice styel={styles.itemDevices} numberId={item.id} nameDevice={item.name} />
             }}
         />
     )
 }
+
+const styles = StyleSheet.create({
+    itemDevices: {
+        paddingBottom: 25,
+    }
+})
 
 export default SearchDevice

@@ -8,6 +8,7 @@ const theme = {
         big: 23,
         extrabig: 30,
         textSizeButton: 25,
+        textLabelTabBar: 16,
     },
     colors: {
         darker: '#164A70',

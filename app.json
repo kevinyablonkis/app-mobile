@@ -32,7 +32,7 @@
       [
         "expo-font",
         {
-          "fonts": [
+          "expo-font": [
             "./assets/fonts/InriaSans-Regular.ttf"
           ]
         }

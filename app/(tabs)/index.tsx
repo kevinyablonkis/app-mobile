@@ -1,7 +1,6 @@
-import { Text, View, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 import StyledText from '@/src/components/StyledText'
 import UIDecoration from '@/src/components/UIDecoration'
-import Constant from 'expo-constants'
 import theme from '@/src/Theme'
 
 export default function Index() {

@@ -25,7 +25,7 @@ export default function TabLayout() {
         options={{
           tabBarLabel: ({ color }) =>
             <View style={styles.labelContainerOne}>
-              <StyledText bold style={{ color: color }}>Inicio</StyledText>
+              <StyledText textLabelTabBar style={{ color: color }}>Inicio</StyledText>
             </View>,
           tabBarIcon: ({ color }) =>
             <View style={styles.iconContainerOne}>
@@ -43,7 +43,7 @@ export default function TabLayout() {
         options={{
           tabBarLabel: ({ color }) =>
             <View style={styles.labelContainerTwo}>
-              <StyledText bold style={{ color: color }}>Chat</StyledText>
+              <StyledText textLabelTabBar style={{ color: color }}>Chat</StyledText>
             </View>,
           tabBarIcon: ({ color }) =>
             <View style={styles.iconContainerTwo}>
@@ -61,7 +61,7 @@ export default function TabLayout() {
         options={{
           tabBarLabel: ({ color }) =>
             <View style={styles.labelContainerThree}>
-              <StyledText bold style={{ color: color }}>Vincular</StyledText>
+              <StyledText textLabelTabBar style={{ color: color }}>Vincular</StyledText>
             </View>,
           tabBarIcon: ({ color }) =>
             <View style={styles.iconContainerThree}>
@@ -96,13 +96,14 @@ const styles = StyleSheet.create({
   },
   tabBarActiveIndicatorOne: {
     position: 'absolute',
-    left: '50%',
-    transform: [{ translateX: '-50%' }, { translateY: '17%' }],
+    left: '-35%',
+    bottom: '-65%',
+    // transform: [{ translateX: -60 }, { translateY: 15 }],
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: theme.colors.lighter,
-    height: '140%',
-    width: '220%',
+    height: 70,
+    width: 90,
     borderRadius: 8,
     zIndex: 0,
   },
@@ -120,13 +121,14 @@ const styles = StyleSheet.create({
   },
   tabBarActiveIndicatorTwo: {
     position: 'absolute',
-    left: '50%',
-    transform: [{ translateX: '-50%' }, { translateY: '17%' }],
+    left: '-22%',
+    bottom: '-65%',
+    // transform: [{ translateX: -80 }, { translateY: 15 }],
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: theme.colors.lighter,
-    height: '140%',
-    width: '220%',
+    height: 70,
+    width: 90,
     borderRadius: 8,
     zIndex: 0,
   },
@@ -146,13 +148,14 @@ const styles = StyleSheet.create({
   },
   tabBarActiveIndicatorThree: {
     position: 'absolute',
-    left: '50%',
-    transform: [{ translateX: '-50%' }, { translateY: '17%' }],
+    left: '-28%',
+    bottom: '-65%',
+    // transform: [{ translateX: -55 }, { translateY: 15 }],
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: theme.colors.lighter,
-    height: '140%',
-    width: '220%',
+    height: 70,
+    width: 90,
     borderRadius: 8,
     zIndex: 0,
   }

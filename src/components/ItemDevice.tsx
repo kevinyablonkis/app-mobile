@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import StyledText from '@/src/components/StyledText'
 import theme from '@/src/Theme'
 
@@ -35,8 +35,8 @@ const styles = StyleSheet.create({
         left: 0,
         borderRadius: 10,
         backgroundColor: theme.colors.dark,
-        width: '100%',
-        height: '100%',
+        width: '105%',
+        height: 45,
     },
     textDevice: {
         position: 'absolute'

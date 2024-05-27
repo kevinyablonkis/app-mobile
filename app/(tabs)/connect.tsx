@@ -1,4 +1,4 @@
-import { View, StyleSheet, ScrollView } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import SearchDevice from '@/src/components/SearchDevice'
 import StyledText from '@/src/components/StyledText'
 import Button from '@/src/components/Button'
@@ -7,7 +7,6 @@ import theme from '@/src/Theme'
 
 export default function Tab() {
   return (
-    <ScrollView>
       <View style={styles.container}>
         <View style={styles.containerVincular} >
           <View style={styles.containerUIDecoration} >
@@ -16,11 +15,10 @@ export default function Tab() {
           <Button primary >Vincular</Button>
         </View>
         <View style={styles.containerListDevice} >
-          <StyledText bold big>Buscando dispositivos</StyledText>
+          <StyledText big>Buscando dispositivos</StyledText>
           <SearchDevice />
         </View>
       </View>
-    </ScrollView>
   );
 }
 
@@ -36,7 +34,7 @@ const styles = StyleSheet.create({
   },
   containerVincular: {
     position: "absolute",
-    top: 30,
+    top: 55,
     alignItems: "center",
     justifyContent: "center",
   },
@@ -44,13 +42,13 @@ const styles = StyleSheet.create({
     position: "absolute",
     alignItems: "center",
     justifyContent: "center",
-    transform: [{ scale: 1.2 }],
+    transform: [{ scale: 1.1 }],
   },
   containerListDevice: {
     alignItems: "center",
     justifyContent: "center",
     gap: 15,
-    marginTop: 330,
+    marginTop: 320,
     marginBottom: 25,
   },
 });

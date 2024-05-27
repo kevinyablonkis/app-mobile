@@ -1,8 +1,11 @@
-import React, { Children } from 'react'
+import React from 'react'
 import { Text, StyleSheet } from 'react-native'
 import theme from '@/src/Theme'
+import GlobalFont from '@/src/GlobalFont';
 
 function Button({ primary, secundary, chatSize, children }: any) {
+
+    GlobalFont()
 
     const Styles = [
         styles.button,

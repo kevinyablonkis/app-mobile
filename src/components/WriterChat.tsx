@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import StyledText from '@/src/components/StyledText'
 import Button from '@/src/components/Button'
 import theme from '@/src/Theme'
@@ -20,7 +20,7 @@ function WriterChat() {
 
 const styles = StyleSheet.create({
     containerWriteChat: {
-        backgroundColor: theme.colors.lighter,
+        backgroundColor: theme.colors.light,
         alignItems: 'center',
         justifyContent: 'center',
         height: 250,

@@ -1,9 +1,9 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import { Text, StyleSheet } from 'react-native'
 import GlobalFont from '../GlobalFont'
 import theme from '@/src/Theme'
 
-function StyledText({ opacity, bold, light, small, big, extrabig, children }: any) {
+function StyledText({ opacity, bold, light, small, big, extrabig, textLabelTabBar, children }: any) {
     GlobalFont()
 
     const textStyle = [
@@ -13,7 +13,8 @@ function StyledText({ opacity, bold, light, small, big, extrabig, children }: an
         small && styles.small,
         big && styles.big,
         extrabig && styles.extrabig,
-        opacity && styles.opacity
+        opacity && styles.opacity,
+        textLabelTabBar && styles.textLabelTabBar
     ]
 
     return (
@@ -38,6 +39,9 @@ const styles = StyleSheet.create({
     },
     extrabig: {
         fontSize: theme.fontSize.extrabig,
+    },
+    textLabelTabBar: {
+        fontSize: theme.fontSize.textLabelTabBar,
     },
     bold: {
         fontWeight: 'bold',
