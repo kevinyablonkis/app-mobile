@@ -9,7 +9,7 @@ export default function Index() {
       style={styles.container}
     >
       <View style={{ width: "100%", alignItems: "center", zIndex: 1 }}>
-        <StyledText extrabig bold>NOMBRE</StyledText>
+        <StyledText extrabig bold>DIG</StyledText>
         <StyledText light>Haz que el mundo te entienda</StyledText>
       </View>
       <View style={styles.UIDecorationOne}>
